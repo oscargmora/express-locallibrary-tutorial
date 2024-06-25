@@ -72,7 +72,7 @@ exports.genre_create_post = [
 			} else {
 				await genre.save();
 				// New genre saved. Redirect to genre detail page.
-				red.redirect(genre.url);
+				res.redirect(genre.url);
 			}
 		}
 	}),
